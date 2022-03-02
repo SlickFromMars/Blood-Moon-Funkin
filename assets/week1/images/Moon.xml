@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="Red.png">
+	<!-- Created with Adobe Animate version 21.0.5.40714 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="moon (not black) instância 10000" x="0" y="0" width="856" height="802"/>
+	<SubTexture name="moon (not black) instância 10001" x="0" y="0" width="856" height="802"/>
+	<SubTexture name="moon (not black) instância 10002" x="856" y="0" width="856" height="802"/>
+	<SubTexture name="moon (not black) instância 10003" x="1712" y="0" width="856" height="802"/>
+	<SubTexture name="moon (not black) instância 10004" x="1712" y="0" width="856" height="802"/>
+	<SubTexture name="moon (not black) instância 10005" x="2568" y="0" width="856" height="802"/>
+	<SubTexture name="moon (not black) instância 10006" x="0" y="802" width="856" height="802"/>
+	<SubTexture name="moon (not black) instância 10007" x="0" y="802" width="856" height="802"/>
+	<SubTexture name="moon (not black) instância 10008" x="0" y="802" width="856" height="802"/>
+	<SubTexture name="moon (not black) instância 10009" x="0" y="802" width="856" height="802"/>
+	<SubTexture name="moon (not black) instância 10010" x="0" y="802" width="856" height="802"/>
+	<SubTexture name="moon (not black) instância 10011" x="0" y="802" width="856" height="802"/>
+	<SubTexture name="moon (not black) instância 10012" x="0" y="802" width="856" height="802"/>
+	<SubTexture name="moon (not black) instância 10013" x="0" y="802" width="856" height="802"/>
+	<SubTexture name="moon (not black) instância 10014" x="0" y="802" width="856" height="802"/>
+	<SubTexture name="moon (not black) instância 10015" x="0" y="802" width="856" height="802"/>
+	<SubTexture name="moon (not black) instância 10016" x="0" y="802" width="856" height="802"/>
+	<SubTexture name="moon (not black) instância 10017" x="0" y="802" width="856" height="802"/>
+	<SubTexture name="moon (not black) instância 10018" x="0" y="802" width="856" height="802"/>
+	<SubTexture name="moon (not black) instância 10019" x="0" y="802" width="856" height="802"/>
+	<SubTexture name="moon (not black) instância 10020" x="0" y="802" width="856" height="802"/>
+	<SubTexture name="moon (not black) instância 10021" x="0" y="802" width="856" height="802"/>
+	<SubTexture name="moon (not black) instância 10022" x="0" y="802" width="856" height="802"/>
+	<SubTexture name="moon (not black) instância 10023" x="0" y="802" width="856" height="802"/>
+	<SubTexture name="moon (not black) instância 10024" x="0" y="802" width="856" height="802"/>
+	<SubTexture name="moon (not black) instância 10025" x="0" y="802" width="856" height="802"/>
+	<SubTexture name="moon (not black) instância 10026" x="0" y="802" width="856" height="802"/>
+	<SubTexture name="moon (not black) instância 10027" x="0" y="802" width="856" height="802"/>
+	<SubTexture name="moon (not black) instância 10028" x="0" y="802" width="856" height="802"/>
+	<SubTexture name="moon (not black) instância 10029" x="0" y="802" width="856" height="802"/>
+</TextureAtlas>
