@@ -67,7 +67,7 @@ class TitleState extends MusicBeatState
 
 	var wackyImage:FlxSprite;
 
-	var easterEggEnabled:Bool = true; //Disable this to hide the easter egg
+	var easterEggEnabled:Bool = false; //Disable this to hide the easter egg
 	var easterEggKeyCombination:Array<FlxKey> = [FlxKey.B, FlxKey.B]; //bb stands for bbpanzu cuz he wanted this lmao
 	var lastKeysPressed:Array<FlxKey> = [];
 
@@ -79,6 +79,14 @@ class TitleState extends MusicBeatState
 
 	override public function create():Void
 	{
+		if(FlxG.save.data.unlockListForCustom != null) {
+            CustomMenuState.unlockList = FlxG.save.data.unlockListForCustom;
+        }
+
+		if(FlxG.save.data.firstPlayed != null) {
+			CustomMenuState.firstPlayed = FlxG.save.data.fistPlayed;
+		}
+
 		Paths.clearStoredMemory();
 		Paths.clearUnusedMemory();
 
@@ -393,7 +401,7 @@ class TitleState extends MusicBeatState
 					if (mustUpdate) {
 						MusicBeatState.switchState(new OutdatedState());
 					} else {
-						MusicBeatState.switchState(new MainMenuState());
+						MusicBeatState.switchState(new CustomMenuState());
 					}
 					closedState = true;
 				});

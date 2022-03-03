@@ -1,5 +1,6 @@
 package;
 
+import js.html.CustomEvent;
 import flixel.graphics.FlxGraphic;
 #if desktop
 import Discord.DiscordClient;
@@ -425,7 +426,7 @@ class PlayState extends MusicBeatState
 			case 'moon':
 				var bg:BGSprite = new BGSprite('Bg', 0, 0, 0.1, 0);
 				bg.screenCenter();
-				bg.setGraphicSize(FlxG.width * 1.2, FlxG.height);
+				bg.setGraphicSize(Std.int(FlxG.width * 1.2), FlxG.height);
 
 			case 'spooky': //Week 2
 				if(!ClientPrefs.lowQuality) {
@@ -3133,6 +3134,9 @@ class PlayState extends MusicBeatState
 				if(Math.isNaN(percent)) percent = 0;
 				Highscore.saveScore(SONG.song, songScore, storyDifficulty, percent);
 				#end
+
+				if(CustomMenuState.unlockList.contains(SONG.song)) CustomMenuState.unlockList.push(SONG.song);
+				if(CustomMenuState.firstPlayed.contains(SONG.song)) CustomMenuState.firstPlayed.push(SONG.song);
 			}
 
 			if (chartingMode)
@@ -3218,7 +3222,7 @@ class PlayState extends MusicBeatState
 				if(FlxTransitionableState.skipNextTransIn) {
 					CustomFadeTransition.nextCamera = null;
 				}
-				MusicBeatState.switchState(new FreeplayState());
+				MusicBeatState.switchState(new CustomMenuState());
 				FlxG.sound.playMusic(Paths.music('freakyMenu'));
 				changedDifficulty = false;
 			}
